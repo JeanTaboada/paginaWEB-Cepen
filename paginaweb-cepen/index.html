@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Principal</title>
+</head>
+<body>
+<header>
+<h1>Pagina de Inicio</h1>
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="/">CRUD - CEPEN</a>
+    </div>
+</nav>
+</header>
+<main class="main-content">
+    <div class="crud-container">
+        <div class="crud-header">
+            <h1>Alumnos Registrados</h1>
+            <button class="button is-success" id="openRegisterModal">
+                <span>> Nuevo Alumno</span>
+            </button>
+        </div>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Nombres</th>
+                <th>Apellido Paterno</th>
+                <th>Apellido Materno</th>
+                <th>Telefono</th>
+                <th>DNI</th>
+                <th>Email</th>
+                <th>Carrera</th>
+                <th>Descripción</th>
+            </tr>
+            </thead>
+
+            <tbody  id="alumnos-table">
+
+            </tbody>
+        </table>
+    </div>
+</main>
+<div class="modal" id="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Registrar Nuevo Alumno</p>
+            <button class="delete" aria-label="close" id="closeRegisterModal"></button>
+        </header>
+        <section class="modal-card-body">
+            <form id="register-form">
+                <div class="field">
+                    <label class="label">Nombres</label>
+                    <div class="control">
+                        <input class="input" type="text" name="nombre" placeholder="Ingrese Nombres">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Apellido Paterno</label>
+                    <div class="control">
+                        <input class="input"
+                               type="text"
+                               name="apePat"
+                               placeholder="Ingrese Apellido Paterno">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Apellido Materno</label>
+                    <div class="control">
+                        <input class="input"
+                               type="text"
+                               name="apeMat"
+                               placeholder="Ingrese Apellido Materno">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Telefono</label>
+                    <div class="control">
+                        <input class="input" type="tel" name="cel" placeholder="Ingrese Telefono">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">DNI</label>
+                    <div class="control">
+                        <input class="input" type="text" name="DNI" placeholder="Ingrese DNI">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Email</label>
+                    <div class="control">
+                        <input class="input" type="email" name="email" placeholder="Ingrese Email">
+                    </div>
+                </div>
+                <div class="select is-info">
+                    <select name="carrera">
+                        <option>Carreras</option>
+                        <option>Cajero Bancario y Comercial (Presencial)</option>
+                        <option>Cajero Bancario y Comercial (Semiresencial)</option>
+                        <option>Cajero Bancario y Comercial (100% Virtual)</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label class="label">Descripción</label>
+                    <div class="control">
+                        <textarea class="textarea" name="desc" placeholder="Ingrese Descripción"></textarea>
+                    </div>
+                </div>
+        </section>
+        <footer class="modal-card-foot">
+                <button type="submit" class="button is-success">
+                    <span>Guardar</span>
+                </button>
+            <div class="modal" id="modal-update">
+                <div class="modal-background"></div>
+                <div class="modal-card">
+                    <header class="modal-card-head">
+                        <p class="modal-card-title">Acualizar Datos de Alumno</p>
+                        <button class="delete" aria-label="close" id="closeUpdateModal"></button>
+                    </header>
+                    <section class="modal-card-body">
+                        <form id="update-form">
+                            <div class="field">
+                                <label class="label">Nombres</label>
+                                <div class="control">
+                                    <input class="input" type="text" name="nombre" placeholder="Ingrese Nombres">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Apellido Paterno</label>
+                                <div class="control">
+                                    <input class="input"
+                                           type="text"
+                                           name="apePat"
+                                           placeholder="Ingrese Apellido Paterno">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Apellido Materno</label>
+                                <div class="control">
+                                    <input class="input"
+                                           type="text"
+                                           name="apeMat"
+                                           placeholder="Ingrese Apellido Materno">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Telefono</label>
+                                <div class="control">
+                                    <input class="input" type="tel" name="cel" placeholder="Ingrese Telefono">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">DNI</label>
+                                <div class="control">
+                                    <input class="input" type="text" name="DNI" placeholder="Ingrese DNI">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Email</label>
+                                <div class="control">
+                                    <input class="input" type="email" name="email" placeholder="Ingrese Email">
+                                </div>
+                            </div>
+                            <div class="select is-info">
+                                <select name="carrera">
+                                    <option>Carreras</option>
+                                    <option>Cajero Bancario y Comercial (Presencial)</option>
+                                    <option>Cajero Bancario y Comercial (Semiresencial)</option>
+                                    <option>Cajero Bancario y Comercial (100% Virtual)</option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <label class="label">Descripción </label>
+                                <div class="control">
+                                    <textarea class="textarea" name="desc" placeholder="Ingrese Descripción"></textarea>
+                                </div>
+                            </div>
+                    </section>
+                    <footer class="modal-card-foot">
+                        <button type="submit" class="button is-success">
+                            <span>Actualizar</span>
+                        </button>
+            </form>
+        </footer>
+    </div>
+</div>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
