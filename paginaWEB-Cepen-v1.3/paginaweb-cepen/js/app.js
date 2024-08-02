@@ -1,5 +1,5 @@
 const firebaseConfig= {
-    apiKey: 'AIzaSyD8-LBXVhB1w8ok_bP3L2Q3kchf2DCU8',
+    apiKey: 'AIzaSyD8-LBXVhB1w8ok_bP3L2vQ3kchf2DCU8',
     authDomain: 'crud-cepen-web.firebaseapp.com',
     projectId: 'crud-cepen-web',
     storageBucket: 'crud-cepen-web.appspot.com',
