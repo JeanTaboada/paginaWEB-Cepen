@@ -3,7 +3,7 @@ import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.9.0/firebase
 import { getAuth, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-auth.js";
 
 const firebaseConfig = {
-    apiKey: 'AIzaSyD8-LBXVhB1w8ok_bP3L2Q3kchf2DCU8',
+    apiKey: 'AIzaSyD8-LBXVhB1w8ok_bP3L2vQ3kchf2DCU8',
     authDomain: 'crud-cepen-web.firebaseapp.com',
     projectId: 'crud-cepen-web',
     storageBucket: 'crud-cepen-web.appspot.com',
