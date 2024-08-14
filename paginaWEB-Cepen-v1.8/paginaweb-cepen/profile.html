@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="styles/profile.css">
+</head>
+<body>
+<header>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">PERFIL - CEPEN</a>
+        </div>
+    </nav>
+</header>
+
+<main class="main-content">
+    <div class="profile-container">
+        <h1>Perfil de Usuario</h1>
+        <div class="profile-info">
+            <img id="profile-picture" src="placeholder.jpg" alt="Foto de perfil">
+            <h2 id="profile-name"></h2>
+            <h2 id="profile-full-name"></h2>
+            <p><strong>Email:</strong> <span id="profile-email"></span></p>
+            <p><strong>Teléfono:</strong> <span id="profile-phone"></span></p>
+            <p><strong>DNI:</strong> <span id="profile-DNI"></span></p>
+            <p><strong>Carrera:</strong> <span id="profile-carrera"></span></p>
+            <p><strong>Descripción:</strong> <span id="profile-description"></span></p>
+        </div>
+    </div>
+</main>
+
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-storage.js"></script>
+<script type="module" src="js/profile.js"></script>
+<script type="module" src="js/firebaseconection.js"></script>
+</body>
+</html>
