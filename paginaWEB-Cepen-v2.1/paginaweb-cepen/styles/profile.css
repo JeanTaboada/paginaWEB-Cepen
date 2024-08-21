@@ -1,0 +1,144 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+:root{
+    --dark: #001233;
+    --white: #ffffff;
+    --yellow: #ffb7
+}
+
+body{
+    font-family: 'Comfortaa', cursive;
+    font-size: 36px;
+}
+/*header*/
+.navbar{
+    background-color: var(--dark);
+    display: flex;
+    justify-content: center;
+}
+.navbar-item{
+    color: var(--white);
+    font-weight: bold;
+    font-size: 36px;
+    transition: .3s ease-in-out all;
+    height: 8vh;
+}
+.navbar-item:hover{
+    color: var(--yellow); !important;
+}
+/*main*/
+.main-content{
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.crud-container{
+    width: 70%;
+    padding: 2rem 3rem;
+    overflow: auto;
+    box-shadow: 0 0 1rem 0 rgba(0,0,0,0.4);
+    border-radius: 0.5rem;
+}
+.crud-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem 1rem 1rem;
+    border-bottom: 1px solid;
+}
+
+.crud-container h1{
+    font-weight: bold;
+    font-size: 24px;
+}
+.button span{
+    margin-left: 10px;
+}
+/* Estilo general del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilo del contenedor del perfil */
+.profile-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info {
+    text-align: center;
+}
+
+.profile-info img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.profile-info h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    /* Asegura que el nombre y apellidos esté*/
+
+.profile-info {
+    text-align: center;
+}
+
+.profile-info img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ddd;
+    margin-bottom: 20px;
+}
+
+/* Estructura en columnas */
+.profile-columns {
+    display: grid; /* Usar grid para las columnas */
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    gap: 20px; /* Espacio entre columnas */
+    padding: 0 20px; /* Espacio interno para las columnas */
+}
+
+.profile-column {
+
+    flex: 1;
+    padding: 0 10px;
+}
+
+.profile-column p {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
