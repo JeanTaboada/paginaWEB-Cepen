@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="paginaweb-cepen/styles/login-style.css">
+    <title>LOGIN</title>
+</head>
+
+<body>
+<header>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">LOGIN - CEPEN</a>
+        </div>
+    </nav>
+</header>
+<main class="main-content">
+    <div class="crud-container">
+        <div class="crud-header">
+        </div>
+        <table class="table">
+            <thead>
+            <section class="formulario-iniciosesion">
+                <h1>¡Bienvenid@ de nuevo!</h1>
+              <br>
+                <form id="formulario-sesion">
+                    <div class="field">
+                        <p class="control has-icons-left has-icons-right">
+                    <input class="input" type="email" id="email" name="email" placeholder="Email"><br><br>
+                            <span class="icon is-small is-left"><i class="fas fa-envelope"></i></span>
+                            <span class="icon is-small is-right"><i class="fas fa-check"></i></span></p>
+                    </div>
+                    <div class="field">
+                    <p class="control has-icons-left">
+                    <input class="input" type="password" id="password" name="password" placeholder="Password"><br><br>
+                        <span class="icon is-small is-left"><i class="fas fa-envelope"></i></span>
+                        <span class="icon is-small is-right"><i class="fas fa-check"></i></span>
+                    </p></div>
+                    <div class="field">
+                        <p class="control">
+                    <input class="button is-success" type="submit" id="btn-login" value="Iniciar sesión">
+                        </p>
+                    </div>
+                </form>
+            </section>
+            </thead>
+        </table>
+    </div>
+</main>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+<script type="module" src="./paginaweb-cepen/js/firebaseconection.js"></script>
+<script type="module" src="./paginaweb-cepen/js/login.js"></script>
+</body>
+</html>
