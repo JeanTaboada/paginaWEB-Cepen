@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 
 :root{
-    --dark: #001233;
+    --dark: #FF0000;
     --white: #ffffff;
     --yellow: #ffb700;
 }
@@ -27,7 +27,7 @@ body {
     font-weight: bold;
     font-size: 36px;
     transition: .3s ease-in-out all;
-    height: 8vh;
+    height: 12vh;
 }
 
 .navbar-item:hover {
@@ -36,7 +36,7 @@ body {
 
 /* main */
 .main-content {
-    height: 92vh;
+    height: 88vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,7 +110,7 @@ body {
 
 .profile-column p {
     margin-bottom: 10px;
-    font-size: 1.2em;
+    font-size: 0.8em;
 }
 
 .profile-info {
@@ -120,4 +120,17 @@ body {
 }
 .profile-picture-names {
     text-align: center;
+}
+.information {
+    background: blue;
+    width: none;
+    height: 80px;
+    text-align: center;
+    font-size: 25px;
+    color: var(--white);
+}
+.encabezado {
+    background: blue;
+    width: none;
+    height: 30px;
 }

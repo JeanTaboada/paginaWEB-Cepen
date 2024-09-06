@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 
 :root{
-    --dark: #001233;
+    --dark:  #FF0000;
     --white: #ffffff;
     --yellow: #ffb7
 }
@@ -21,20 +21,20 @@ body{
     font-weight: bold;
     font-size: 36px;
     transition: .3s ease-in-out all;
-    height: 8vh;
+    height: 10vh;
 }
 .navbar-item:hover{
     color: var(--yellow); !important;
 }
 /*main*/
 .main-content{
-    height: 92vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .crud-container{
-    width: 70%;
+    width: 90%;
     padding: 2rem 3rem;
     overflow: auto;
     box-shadow: 0 0 1rem 0 rgba(0,0,0,0.4);
@@ -53,4 +53,17 @@ body{
 }
 .button span{
     margin-left: 10px;
+}
+.information {
+    background: blue;
+    width: none;
+    height: 80px;
+    text-align: center;
+    font-size: 25px;
+    color: var(--white);
+}
+.encabezado {
+    background: blue;
+    width: none;
+    height: 30px;
 }

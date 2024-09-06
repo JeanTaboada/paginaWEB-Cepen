@@ -1,6 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-analytics.js";
-import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-auth.js";
+import { getAuth, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-auth.js";
 import { getDatabase, ref, child, get } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-database.js";
 
 const firebaseConfig = {
@@ -61,3 +61,12 @@ export class ManageAccount {
             });
     }
 }
+window.addEventListener('popstate', (event)=>{
+        firebase.auth().signOut().then(() => {
+                    window.location.href = "./paginaweb-cepen/login.html";
+                })
+                .catch((error) => {
+                    console.error(error.message);
+                });
+        })
+

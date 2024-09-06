@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 
 :root{
-    --dark: #001233;
+    --dark: #FF0000;
     --white: #ffffff;
     --yellow: #ffb7
 }
@@ -21,14 +21,14 @@ body{
     font-weight: bold;
     font-size: 36px;
     transition: .3s ease-in-out all;
-    height: 8vh;
+    height: 12vh;
 }
 .navbar-item:hover{
     color: var(--yellow); !important;
 }
 /*main*/
 .main-content{
-    height: 50vh;
+    height: 92vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,4 +71,17 @@ h1{
     align-items: center;
     align-content: center;
     justify-content: center;
+}
+.linea {
+    background: blue;
+    width: none;
+    height: 30px;
+}
+.information {
+    background: blue;
+    width: none;
+    height: 80px;
+    text-align: center;
+    font-size: 25px;
+    color: var(--white);
 }
